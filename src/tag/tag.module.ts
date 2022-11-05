@@ -9,7 +9,6 @@ import { TagEntity } from '@app/tag/tag.entity';
   controllers: [TagController],
   providers: [TagService],
 })
-
 class TagModule {}
 
-export { TagModule }
+export { TagModule };

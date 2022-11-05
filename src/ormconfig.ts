@@ -1,4 +1,4 @@
-import { PostgresConnectionOptions } from "typeorm/driver/postgres/PostgresConnectionOptions";
+import { PostgresConnectionOptions } from 'typeorm/driver/postgres/PostgresConnectionOptions';
 
 const config: PostgresConnectionOptions = {
   type: 'postgres',
@@ -8,7 +8,7 @@ const config: PostgresConnectionOptions = {
   password: 'secret',
   database: 'medium-clone',
   entities: [__dirname + '/**/*.entity{.ts,.js}'],
-  synchronize: true
-}
+  synchronize: true,
+};
 
-export { config }
+export { config };

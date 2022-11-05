@@ -10,8 +10,8 @@ class TagController {
   async findAll(): Promise<{ tags: TagEntity['name'][] }> {
     const tagEntities = await this.tagService.findAll();
     return {
-      tags: tagEntities.map((entity) => entity.name)
-    }
+      tags: tagEntities.map((entity) => entity.name),
+    };
   }
 }
 
