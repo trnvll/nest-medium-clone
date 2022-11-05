@@ -8,7 +8,8 @@ const config: PostgresConnectionOptions = {
   password: 'secret',
   database: 'medium-clone',
   entities: [__dirname + '/**/*.entity{.ts,.js}'],
-  synchronize: true,
+  migrations: [__dirname + '/migrations/**/*{.ts,.js}'],
+  synchronize: false,
 };
 
 export { config };
