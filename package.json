@@ -21,7 +21,7 @@
     "db:drop": "npm run typeorm schema:drop",
     "db:generate": "npm run typeorm migration:generate",
     "db:migrate": "npm run typeorm migration:run",
-    "db:docker": "docker run --name medium-clone -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres"
+    "db:init": "docker run --name medium-clone -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres"
   },
   "dependencies": {
     "@nestjs/common": "^9.0.0",
