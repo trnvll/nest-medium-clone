@@ -1,12 +1,14 @@
 import { PostgresConnectionOptions } from "typeorm/driver/postgres/PostgresConnectionOptions";
 
-const ormconfig: PostgresConnectionOptions = {
+const config: PostgresConnectionOptions = {
   type: 'postgres',
   host: '127.0.0.1',
   port: 5432,
   username: 'root',
   password: 'secret',
-  database: 'medium-clone'
+  database: 'medium-clone',
+  entities: [__dirname + '/**/*.entity{.ts,.js}'],
+  synchronize: true
 }
 
-export { ormconfig }
+export { config }
